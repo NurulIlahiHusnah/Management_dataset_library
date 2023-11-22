@@ -1,0 +1,105 @@
+"id_anggota","name_member","no_identity","education","gender","address","job","mobile_number","borrowed_amount"
+158843,Mutia Astuti,1584896194,Bachelor,Female,Jln. Mangga 52 Bekasi Timur,Mahasiswa,628120121958,4
+155941,Bahrudin,1584444194,Proffesor,Male,Jln. Pencenonan Raya Jakarta Pusat,Manager,628123691958,10
+157846,Mahalini,15848931194,High School,Female,Jln. Cendrawasih 12 mekarsari Depok,Wiraswasta,628121478958,2
+152845,Dimas Anggara,15849876194,Bachelor,Male,Apartmen Cibubur Jakarta Timur,Programer,628797120021,5
+159841,Ferlix Aliadro,15848919794,Master,Male,Perumahan Jasindo JL.Mekar Bunga Cilegon,CEO,6208590121958,17
+184578,John Doe,123456789,Bachelor,Male,"123 Main St, Cityville",Engineer,1234567890,0
+298547,Jane Smith,987654321,Master,Female,"456 Oak St, Townsville",Doctor,9876543210,3
+336140,Bob Johnson,345678901,High School,Male,"789 Pine St, Villagetown",Teacher,2345678901,1
+434852,Alice Brown,567890123,PhD,Female,"910 Elm St, Boroughville",Scientist,3456789012,2
+597002,Michael White,789012345,Bachelor,Male,"111 Maple St, Hamletville",Programmer,4567890123,5
+609862,Emily Davis,234567890,Master,Female,"222 Cedar St, Villageville",Artist,5678901234,8
+799801,David Green,890123456,High School,Male,"333 Oak St, Hamletsville",Manager,6789012345,10
+897541,Olivia Wilson,456789012,PhD,Female,"444 Pine St, Boroughtown",Researcher,7890123456,12
+999785,Liam Anderson,678901234,Bachelor,Male,"555 Elm St, Citytown",Engineer,8901234567,15
+105514,Sophia Martin,890123456,Master,Female,"666 Birch St, Villagetown",Doctor,9012345678,7
+110214,Noah Taylor,123450987,High School,Male,"777 Cedar St, Cityville",Teacher,1234567890,3
+128724,Emma Moore,543210987,PhD,Female,"888 Oak St, Hamletville",Scientist,2345678901,6
+139641,William Parker,987654321,Bachelor,Male,"999 Pine St, Townsville",Programmer,3456789012,9
+148874,Ava Carter,321098765,Master,Female,"101 Maple St, Boroughtown",Artist,4567890123,11
+153645,James Smith,135792468,High School,Male,"202 Elm St, Citytown",Manager,5678901234,4
+1,Steve Jobs,Walter Issacson,Biography,issued,2011,38.69,8
+2,Discovery of India,Jawaharlal Nehru,History,issued,1946,16.65,6
+3,My Experiments with Truth,Mahatma Gandhi,Autobiography,issued,1929,4.8,2
+4,Object Oriented Programming with C++,E Balagurusamy,Education,issued,2008,720.0,4
+5,Thinking with type,Ellen Lupton,Arts,issued,2010,27.95,5
+6,The Photographer's,Lindsay Adler,Photography,issued,2017,44.95,1
+7,Think and Grow,Napoleon Hill,Economics,issued,1937,7.19,15
+8,The Fifth Discipline : The Art,Peter M.Senge,Management,issued,1990,42.0,6
+9,A Theory of Justice,John Rawls,Law,issued,1971,156.0,3
+10,Eat to Live,Joel Fuhrman,Health,issued,2003,18.27,7
+11,City of Heavenly Fire,Cassandra Clare,Fiction,available,2014,10.02,12
+12,Da Vinci Code,Dan Brown,Fiction,available,2003,3.02,15
+13,War and Peace,Leo Tolstoy,Philosophical fiction,issued,1869,1.99,6
+14,Python For All,John Shovic,Education,available,2019,25.0,8
+15,Automate The Boring Stuff With Python,Al Sweigart,Education,available,2015,34.95,7
+16,Wings Of Fire,APJ Abdul Kalam,Autobiography,available,1999,2.7,7
+17,Ikigai,Hector Garcia,Personal Development,available,2017,3.88,9
+18,Who Will Cry When You Will Die,Robin Sharma,Personal Development,available,1999,8.99,4
+19,Rich Dad Poor Dad,Robert T. Kiyosaki,Business,available,1997,3.9,16
+20,Immortals of Meluha,Amish Tirpathi,High Fantasy,available,2010,9.2,11
+21,A Brief History Of Time,Stephen Hawking,SPACE,issued,1928,9.99,2
+22,I Know Why The Cage Bird Sings,Maya Anguelo,Story,available,1969,7.72,4
+23,Lord Of Files,William Golding,Fiction,issued,1954,6.28,8
+24,Loara Dune,R. D Blackmore,Fiction,issued,2003,18.0,22
+25,Jamacia Inn,Daphne,Fiction,issued,1936,17.99,10
+26,Kidnapped,Robert Louis,Fiction,available,1886,7.99,5
+27,Treasure Island,Robert Louis,Fiction,available,1883,6.99,9
+28,The Call Of Wild,Jack London,Fiction,available,1903,22.29,9
+29,Charlottes Web,E. B White,Fiction,available,1952,10.0,8
+30,The Wind In Willows,Kenneth Grahame,Fiction,available,1908,37.51,4
+31,Being and Time,Martin Heldegger,Philosophy,available,1927,22.31,6
+32,The Republic,Rocha Pereia,Philosophy,issued,1990,1.31,5
+33,Critique For Pure Reason,Paul Guyer,Philosophy,available,1998,52.99,5
+34,The Prince,Rufus Godwin,Philosophy,available,2014,17.95,8
+35,Ethics,Stuart Hampshire,Philosophy,available,2015,10.0,18
+36,Long Walk To Freedom,Nelson Mandela,Autobiography,available,1994,5.11,11
+37,The Dairy Of Young Girl,Anne Frank,Autobiography,available,1947,15.99,13
+38,Mark Twain,Mark Twain,Autobiography,available,1876,16.95,14
+39,Mein Kampf,Adolf Hitler,Autobiography,available,1925,7.51,19
+40,Freakonomics,Steveb D.Levit,Economics,issued,2005,11.49,6
+41,Thinking Fast and Slow,Daniel Kahneman,Economics,available,2011,16.27,8
+42,Tell You About Capitalism,HA-Joon Chang,Economics,available,2010,13.77,7
+43,Animal Spirits,Akerlof and Shiller,Economics,available,2009,17.95,7
+44,The Black Swan,Nassim Nicholas Taleb,Economics,issued,2007,13.77,1
+45,"1984",George Orwell,Story,available,1949,9.98,17
+46,The Lord Of Wings ,J.R.R.Tolken,Story,issued,1954,19.29,1
+47,Kite Runner,Khaled Hosseini,Story,available,2003,10.71,11
+48,Harry Potter,J.K.Rowling,Story,available,1997,62.99,16
+49,The Book Theif,Markus Zusak,Story,available,2005,11.21,19
+50,History Of 20th Century,Martin Gilbert,History,available,2002,48.11,18
+51,"Guns,Germs,and Steel",Jared Daimond,History,issued,1997,24.99,3
+52,A World lit Only by Fire,William Manchestar,History,issued,1992,19.99,9
+53,The Crusades ,Thomas Asbridge,History,available,2010,0.97,7
+54,Over The Edge Of The World,Laurence,History,available,2003,34.67,7
+55,A Beautiful Mind ,Sylvia Nasar,Biography,available,1998,15.99,18
+56,The Enigma,Andrew Hodges,Biography,available,1983,17.95,4
+57,Alexander Hamilton,Ron Chernow,Biography,available,2004,12.7,5
+58,Barracoon,Zora Neale Hurston,Biography,available,2018,1359.0,9
+59,CHURCHILL : A Life,MArtin Glibert,Biography,available,1991,34.5,1
+60,A Tale of Two Cities,Charles Dickens,Historical novel,issued,1859,10.71,14
+61,Les MisÃ©rables,Victor Hugo,Historical fiction,available,1862,5.99,16
+2023-11-10,1478,"1254","46466",2023-11-10
+2023-11-12,364,"3250","64646",2023-11-13
+2023-11-14,8654,"9985","62215",2023-11-14
+2023-11-16,1478,"2165","48314",2023-11-18
+2023-11-18,8654,"8946","36971",2023-11-18
+2023-11-20,8654,"5215","12457",2023-11-20
+2023-11-22,1478,"9147","98542",2023-11-25
+2023-11-24,364,"3254","39758",2023-11-24
+2023-11-26,1478,"2222","31252",2023-11-29
+2023-11-28,364,"8800","85274",2023-11-28
+8654,David,S1,L,Jln. Mutiara laut timur 02 Cakung,dabvusne5750,Ascd11,628980121958
+1478,Putri,S1,P,Jln. Pesanggarahan Jakarta Timur,pkatds157,Uyhts5,6281201200118
+364,Carolina,S1,P,Jln. Gatot Subroto Utomo Jakart Pusat,p54oenoud,VbTR887,628771216958
+2023-11-07,"46466",1478,609862,4,5
+2023-11-09,"64646",364,128724,2,2
+2023-11-11,"62215",8654,184578,3,2
+2023-11-13,"48314",1478,157846,1,5
+2023-11-15,"36971",8654,153645,15,3
+2023-11-17,"12457",8654,110214,2,1
+2023-11-19,"98542",1478,434852,13,4
+2023-11-21,"39758",364,298547,1,4
+2023-11-23,"31252",1478,184578,4,5
+2023-11-25,"85274",364,298547,2,3

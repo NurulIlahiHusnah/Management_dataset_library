@@ -8,11 +8,7 @@ status varchar,
 publication_year int,
 unit_price float,
 stok int
-)
-
--- merubah nama kolom bid menjadi id_book
-alter table data_buku 
-rename column bid to id_book
+);
 
 --membuat tabel anggota
 create table anggota  (
@@ -25,7 +21,7 @@ address varchar,
 job varchar,	
 mobile_number BIGINT, 	
 borrowed_amount int
-)
+);
 
 -- membuat tabel pengurus 
 create table pengurus(
@@ -37,28 +33,48 @@ create table pengurus(
 	username varchar,	
 	Password_ varchar,
 	mobile_number BIGINT
-)
+);
 
 -- membuat table pinjam buku 
 create table pinjam ( 
 	Tanggal_pinjam date,
-	ID_pinjam varchar primary key ,
+	ID_pinjam int primary key ,
 	ID_pengurus int,
 	ID_anggota int,	
-	ID_buku int,
+	ID_buku_pinjam varchar,
 	jumlah_buku int
-)
+);
 
 -- membuat tabel pegembalian
 create table pengembalian( 
 	Tanggal_pengembalian date,
 	ID_pengurus	int,
-	ID_pengembalian varchar primary key,
-	ID_pinjam varchar,	
+	ID_pengembalian int primary key,
+	ID_pinjam int,	
 	dikembalikan date
-)
-alter table pengembalian 
-rename column ID_peminjam to ID_pinjaman
+);
+
+ALTER TABLE pengembalian
+ADD COLUMN total_keterlambatan int,
+ADD COLUMN total_denda int;
+
+
+-- membuat table detail_pinjaman buku
+create table detail_pinjam_buku(
+	id_buku_pinjam varchar primary key not null,
+	id_anggota int,
+	id_buku1 int,
+	id_buku2 int,
+	id_buku3 int,
+	id_buku4 int,
+	id_buku5 int,
+	jml_buku1 int,
+	jml_buku2 int,
+	jml_buku3 int,
+	jml_buku4 int,
+	jml_buku5 int
+);
+
 -- memasukan data yang diperlukan
 insert into anggota 
        (ID_Anggota, name_member, no_identity, education, gender, address, job, mobile_number,borrowed_amount ) 
@@ -84,49 +100,56 @@ values
        (148874, 'Ava Carter', 321098765, 'Master', 'Female', '101 Maple St, Boroughtown', 'Artist', 4567890123, 11),
        (153645, 'James Smith', 135792468, 'High School', 'Male', '202 Elm St, Citytown', 'Manager', 5678901234, 4);
 
-
-
 -- memasukan data yang diperlukan 
 insert into pengurus
 	(Librarian_ID,name_,education,gender,address,username,Password_,mobile_number)
 values
 	 (008654, 'David','S1', 'L', 'Jln. Mutiara laut timur 02 Cakung', 'dabvusne5750','Ascd11' , 628980121958),
 	 (001478, 'Putri','S1', 'P', 'Jln. Pesanggarahan Jakarta Timur', 'pkatds157','Uyhts5' , 6281201200118),
-	 (000364, 'Carolina','S1', 'P', 'Jln. Gatot Subroto Utomo Jakart Pusat', 'p54oenoud','VbTR887', 628771216958)
-
-	 	
-)
-	 
-insert into pinjam
-	(tanggal_pinjam, id_pinjam, id_pengurus, id_anggota, id_buku,jumlah_buku)
-values 
-	('2023-11-07',46466 , 001478, 609862, 4, 5),
-	('2023-11-09',64646 , 000364, 128724, 2, 2),
-	('2023-11-11',62215 , 008654, 184578, 3, 2),
-	('2023-11-13',48314 , 001478, 157846, 1, 5),
-	('2023-11-15',36971 , 008654, 153645, 15, 3),
-	('2023-11-17',12457 , 008654, 110214, 2, 1),
-	('2023-11-19',98542 , 001478, 434852, 13, 4),
-	('2023-11-21',39758 , 000364, 298547, 1, 4),
-	('2023-11-23',31252 , 001478, 184578, 4, 5),
-	('2023-11-25',85274 , 000364, 298547, 2, 3)
-
-insert into pengembalian
-	(tanggal_pengembalian, id_pengurus, id_pengembalian , id_pinjam , dikembalikan)
-values 
-	('2023-11-10', 001478, 1254 ,46466 , '2023-11-10'),
-	('2023-11-12', 000364, 3250 ,64646 , '2023-11-13'),
-	('2023-11-14', 008654, 9985 ,62215 , '2023-11-14'),
-	('2023-11-16', 001478, 2165 ,48314 , '2023-11-18'),
-	('2023-11-18', 008654, 8946 ,36971 , '2023-11-18'),
-	('2023-11-20', 008654, 5215 ,12457 , '2023-11-20'),
-	('2023-11-22', 001478, 9147 ,98542 , '2023-11-25'),
-	('2023-11-24', 000364, 3254 ,39758 , '2023-11-24'),
-	('2023-11-26', 001478, 2222 ,31252 , '2023-11-29'),
-	('2023-11-28', 000364, 8800 ,85274 , '2023-11-28')	
+	 (000364, 'Carolina','S1', 'P', 'Jln. Gatot Subroto Utomo Jakart Pusat', 'p54oenoud','VbTR887', 628771216958);
 	
-select * from data_buku;
-select * from anggota;
-select * from pengurus ;
-select * from pinjam ;
-select * from pengembalian;
+-- memasukan data yang diperlukan 
+insert into detail_pinjam_buku
+	(id_buku_pinjam, id_anggota, id_buku1, id_buku2, id_buku3, id_buku4, id_buku5, jml_buku1, jml_buku2, jml_buku3, jml_buku4, jml_buku5)
+	values
+	('A1',609862, 5, 3, 8, NULL, NULL, 1, 1, 2, NULL, NULL),
+	('A2',128724, 15, 7, NULL, NULL, NULL, 1, 1, NULL, NULL, NULL),
+	('A3',184578, 9, 26, 50, NULL, NULL, 2, 1, 1, NULL, NULL),
+	('A4',157846, 4, 35, 3, NULL, NULL, 1, 1, 3, NULL, NULL),
+	('A5',153645, 3, 44, NULL, NULL, NULL, 3, 1, NULL, NULL, NULL),
+	('A6',110214, 60, NULL, NULL, NULL, NULL, 4, NULL, NULL, NULL, NULL),
+	('A7',434852, 54, 51, 19, NULL, NULL, 1, 1, 1, NULL, NULL),
+	('A8',298547, 13, 8, NULL, NULL, NULL, 1, 2, NULL, NULL, NULL),
+	('A9',184578, 33, 49, 6, NULL, NULL, 5, 1, 2, NULL, NULL),
+	('A10',298547,45, 42, 1, NULL, NULL, 3, 1, 2, NULL, NULL);
+	
+-- memasukan data yang diperlukan 	 
+insert into pinjam
+	(Tanggal_pinjam, id_pinjam, id_pengurus, id_anggota, id_buku_pinjam)
+values 
+	('2023-11-07',46466 , 001478, 609862,'A1'),
+	('2023-11-09',64646 , 000364, 128724,'A2'),
+	('2023-11-11',62215 , 008654, 184578,'A3'),
+	('2023-11-13',48314 , 001478, 157846,'A4'),
+	('2023-11-15',36971 , 008654, 153645,'A5'),
+	('2023-11-17',12457 , 008654, 110214,'A6'),
+	('2023-11-19',98542 , 001478, 434852,'A7'),
+	('2023-11-21',39758 , 000364, 298547,'A8'),
+	('2023-11-23',31252 , 001478, 184578,'A9'),
+	('2023-11-25',85274 , 000364, 298547,'A10');
+
+-- memasukan data yang diperlukan 
+insert into pengembalian
+	(id_pengurus, id_pengembalian , id_pinjam , dikembalikan)
+values 
+	( 001478, 1254 ,46466 , '2023-11-10'),
+	( 000364, 3250 ,64646 , '2023-11-13'),
+	( 008654, 9985 ,62215 , '2023-11-14'),
+	( 001478, 2165 ,48314 , '2023-11-18'),
+	( 008654, 8946 ,36971 , '2023-11-18'),
+	( 008654, 5215 ,12457 , '2023-11-20'),
+	( 001478, 9147 ,98542 , '2023-11-25'),
+	( 000364, 3254 ,39758 , '2023-11-24'),
+	( 001478, 2222 ,31252 , '2023-11-29'),
+	( 000364, 8800 ,85274 , '2023-11-28');	
+
